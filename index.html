@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Pheho Web site</title>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    .active{
+      background-color: #FF1F3D;
+      color: white;
+    }
+  </style>
+</head>
+<body class="px-10 mx-auto">
+  <header>
+    <nav class="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center py-6 border-b-2 border-[#17171720]">
+      <div class="py-3">
+        <img class="w-30" src="./assets/Logo.png" alt="">
+      </div>
+      <div class="flex gap-6 justify-between">
+        <div class="">
+          <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+            <input id="search_input" type="search" required placeholder="Search"/>
+          </label>
+        </div>
+        <button class="btn bg-[#FF1F3D] text-white ">Sort by view</button>
+      </div>
+    </nav>
+  </header>
+
+  <nav id="category_container" class="flex justify-center items-center gap-4 py-8">
+   <div>
+
+<button id="btn-all" onclick="loadVideos()" class="btn btn-sm ">All</button>
+   </div>
+  </nav>
+  <section id="lodar" class="text-center py-20 hidden">
+    <span class="loading loading-dots loading-xs"></span>
+    <span class="loading loading-dots loading-sm"></span>
+    <span class="loading loading-dots loading-md"></span>
+    <span class="loading loading-dots loading-lg"></span>
+    <span class="loading loading-dots loading-xl"></span>
+  </section>
+  <section id="video-container" class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+    <div class="flex flex-col col-span-full py-20 justify-center items-center">
+      <img src="./assets/Icon.png" alt="">
+      <h2 class="text-3xl font-bold text-center py-10">Oops!! Sorry, There is no <br> content here</h2>
+    </div>
+  </section>
+ 
+
+  <section id="" class="">
+ <dialog id="video_details" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+     <div class="" id="details_container">
+      
+     </div>
+      <form method="dialog" class=" flex justify-end py-3 items-end">
+        <button class="btn justify-end hover:bg-[#FF1F3D] hover:text-white">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+</section>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
