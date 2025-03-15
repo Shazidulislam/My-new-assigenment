@@ -97,26 +97,7 @@ const displayVideoDetails=(objVideo)=>{
 </div>
   `
 }
-// {
-//   "category_id": "1001",
-//   "video_id": "aaaa",
-//   "thumbnail": "https://i.ibb.co/L1b6xSq/shape.jpg",
-//   "title": "Shape of You",
-//   "authors": [
-//       {
-//           "profile_picture": "https://i.ibb.co/D9wWRM6/olivia.jpg",
-//           "profile_name": "Olivia Mitchell",
-//           "verified": ""
-//       }
-//   ],
-//   "others": {
-//       "views": "100K",
-//       "posted_date": "16278"
-//   },
-//   "description": "Dive into the rhythm of 'Shape of You,' a captivating track that blends pop sensibilities with vibrant beats. Created by Olivia Mitchell, this song has already gained 100K views since its release. With its infectious melody and heartfelt lyrics, 'Shape of You' is perfect for fans looking for an uplifting musical experience. Let the music take over as Olivia's vocal prowess and unique style create a memorable listening journey."
-// }
 
-//get categori to display tihs btn
 const displayCategories =(categori)=>{
 //  console.log(categori)
  for(let cate of categori){
@@ -186,37 +167,6 @@ const displayVideos=(videos)=>{
   }
   removeLodar()
 }
-// const displayCategoriesBtn=(categoriId)=>{
-// //  console.log(categoriId)
-// for(let cateId of categoriId){
-//   // console.log(cateId)
-// }
-// }
-
-
-
-
-
-
 
 
 loadCategories()
-
-// {
-//   "category_id": "1001",
-//   "video_id": "aaah",
-//   "thumbnail": "https://i.ibb.co/hY496Db/coloer-of-the-wind.jpg",
-//   "title": "Colors of the Wind",
-//   "authors": [
-//       {
-//           "profile_picture": "https://i.ibb.co/6r4cx4P/ethen-clack.png",
-//           "profile_name": "Ethan Clark",
-//           "verified": true
-//       }
-//   ],
-//   "others": {
-//       "views": "233K",
-//       "posted_date": "16090"
-//   },
-//   "description": "Ethan Clark's 'Colors of the Wind' is a vibrant musical exploration that captivates listeners with its rich, expressive melodies and uplifting rhythm. With 233K views, this song is a celebration of nature's beauty and human connection, offering a soothing and enriching experience for fans of heartfelt, nature-inspired music."
-// }
